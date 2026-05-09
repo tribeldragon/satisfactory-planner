@@ -1,105 +1,5403 @@
 {
   "items": [
-    "Iron Ore",
-    "Iron Ingot",
-    "Iron Plate",
-    "Iron Rod",
-    "Copper Ore",
-    "Copper Ingot",
-    "Wire",
+    "AI Expansion Server",
+    "AI Limiter",
+    "Adaptive Control Unit",
+    "Alclad Aluminum Sheet",
+    "Alien DNA Capsule",
+    "Alien Power Matrix",
+    "Alien Protein",
+    "Aluminum Casing",
+    "Aluminum Ingot",
+    "Aluminum Scrap",
+    "Any",
+    "Assembly Director System",
+    "Automated Wiring",
+    "Ballistic Warp Drive",
+    "Battery",
+    "Bauxite",
+    "Biomass",
+    "Black Powder",
+    "Blue Power Slug",
     "Cable",
+    "Caterium Ingot",
+    "Caterium Ore",
+    "Circuit Board",
+    "Cluster Nobelisk",
+    "Coal",
+    "Compacted Coal",
+    "Computer",
+    "Concrete",
+    "Cooling System",
+    "Copper Ingot",
+    "Copper Ore",
+    "Copper Powder",
+    "Copper Sheet",
     "Crude Oil",
-    "Plastic",
-    "Rubber",
-    "Heavy Oil Residue",
-    "Fuel",
+    "Crystal Oscillator",
+    "Dark Matter Crystal",
+    "Diamonds",
+    "Electromagnetic Control Rod",
+    "Empty Canister",
+    "Empty Fluid Tank",
+    "Encased Industrial Beam",
+    "Encased Plutonium Cell",
+    "Encased Uranium Cell",
+    "Explosive Rebar",
+    "Fabric",
+    "Ficsite Ingot",
+    "Ficsite Trigon",
+    "Ficsonium",
+    "Ficsonium Fuel Rod",
+    "Fused Modular Frame",
+    "Gas Filter",
+    "Gas Nobelisk",
+    "Hatcher Remains",
+    "Heat Sink",
+    "Heavy Modular Frame",
+    "High-Speed Connector",
+    "Hog Remains",
+    "Homing Rifle Ammo",
+    "Iodine Infused Filter",
+    "Iron Ingot",
+    "Iron Ore",
+    "Iron Plate",
+    "Iron Rebar",
+    "Iron Rod",
+    "Leaves",
+    "Limestone",
+    "Magnetic Field Generator",
+    "Modular Engine",
+    "Modular Frame",
+    "Motor",
+    "Mycelia",
+    "Neural-Quantum Processor",
+    "Nitrogen Gas",
+    "Nobelisk",
+    "Non-fissile Uranium",
+    "Nuclear Pasta",
+    "Nuke Nobelisk",
+    "Packaged Alumina Solution",
+    "Packaged Fuel",
+    "Packaged Heavy Oil Residue",
+    "Packaged Ionized Fuel",
+    "Packaged Liquid Biofuel",
+    "Packaged Nitric Acid",
+    "Packaged Nitrogen Gas",
+    "Packaged Oil",
+    "Packaged Rocket Fuel",
+    "Packaged Sulfuric Acid",
+    "Packaged Turbofuel",
+    "Packaged Water",
     "Petroleum Coke",
+    "Plastic",
+    "Plutonium Fuel Rod",
+    "Plutonium Pellet",
+    "Plutonium Waste",
     "Polymer Resin",
+    "Portable Miner",
+    "Power Shard",
+    "Pressure Conversion Cube",
+    "Pulse Nobelisk",
+    "Purple Power Slug",
+    "Quartz Crystal",
+    "Quickwire",
+    "Radio Control Unit",
+    "Raw Quartz",
+    "Reanimated SAM",
+    "Reinforced Iron Plate",
+    "Rifle Ammo",
+    "Rotor",
+    "Rubber",
+    "SAM",
+    "SAM Fluctuator",
+    "Screw",
+    "Shatter Rebar",
+    "Silica",
+    "Singularity Cell",
+    "Smart Plating",
+    "Smokeless Powder",
+    "Solid Biofuel",
+    "Spitter Remains",
+    "Stator",
+    "Steel Beam",
+    "Steel Ingot",
+    "Steel Pipe",
+    "Stinger Remains",
+    "Stun Rebar",
+    "Sulfur",
+    "Supercomputer",
+    "Superposition Oscillator",
+    "Thermal Propulsion Rocket",
+    "Time Crystal",
+    "Turbo Motor",
+    "Turbo Rifle Ammo",
+    "Uranium",
+    "Uranium Fuel Rod",
+    "Uranium Waste",
+    "Versatile Framework",
     "Water",
-    "Awesome Sink"
+    "Wire",
+    "Wood",
+    "Yellow Power Slug"
   ],
   "recipes": [
     {
       "name": "Iron Ingot",
-      "machine": "Smelter",
-      "ingredients": [{"item": "Iron Ore", "amount": 30}],
-      "products": [{"item": "Iron Ingot", "amount": 30}],
+      "machine": "smelting1",
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Ingot",
+          "amount": 30.0
+        }
+      ],
       "is_alternate": false
+    },
+    {
+      "name": "Alternate: Iron Alloy Ingot",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 40.0
+        },
+        {
+          "item": "Copper Ore",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Ingot",
+          "amount": 75.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Pure Iron Ingot",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 35.0
+        },
+        {
+          "item": "Water",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Ingot",
+          "amount": 65.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Leached Iron Ingot",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 50.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Ingot",
+          "amount": 100.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Copper Ingot",
+      "machine": "smelting1",
+      "ingredients": [
+        {
+          "item": "Copper Ore",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Ingot",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Copper Alloy Ingot",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Copper Ore",
+          "amount": 50.0
+        },
+        {
+          "item": "Iron Ore",
+          "amount": 50.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Ingot",
+          "amount": 100.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Pure Copper Ingot",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Copper Ore",
+          "amount": 15.0
+        },
+        {
+          "item": "Water",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Ingot",
+          "amount": 37.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Leached Copper Ingot",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Copper Ore",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Ingot",
+          "amount": 110.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Steel Ingot",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 45.0
+        },
+        {
+          "item": "Coal",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Ingot",
+          "amount": 45.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Solid Steel Ingot",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 40.0
+        },
+        {
+          "item": "Coal",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Ingot",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Compacted Steel Ingot",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 22.5
+        },
+        {
+          "item": "Compacted Coal",
+          "amount": 11.25
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Ingot",
+          "amount": 37.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Coke Steel Ingot",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Iron Ore",
+          "amount": 75.0
+        },
+        {
+          "item": "Petroleum Coke",
+          "amount": 75.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Ingot",
+          "amount": 100.0
+        }
+      ],
+      "is_alternate": true
     },
     {
       "name": "Iron Plate",
-      "machine": "Constructor",
-      "ingredients": [{"item": "Iron Ingot", "amount": 30}],
-      "products": [{"item": "Iron Plate", "amount": 20}],
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Plate",
+          "amount": 20.0
+        }
+      ],
       "is_alternate": false
+    },
+    {
+      "name": "Alternate: Steel Cast Plate",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 15.0
+        },
+        {
+          "item": "Steel Ingot",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Plate",
+          "amount": 45.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Coated Iron Plate",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 37.5
+        },
+        {
+          "item": "Plastic",
+          "amount": 7.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Plate",
+          "amount": 75.0
+        }
+      ],
+      "is_alternate": true
     },
     {
       "name": "Iron Rod",
-      "machine": "Constructor",
-      "ingredients": [{"item": "Iron Ingot", "amount": 15}],
-      "products": [{"item": "Iron Rod", "amount": 15}],
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Rod",
+          "amount": 15.0
+        }
+      ],
       "is_alternate": false
+    },
+    {
+      "name": "Alternate: Steel Rod",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Steel Ingot",
+          "amount": 12.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Rod",
+          "amount": 48.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Aluminum Rod",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 7.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Rod",
+          "amount": 52.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Wire",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Copper Ingot",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Wire",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Iron Wire",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 12.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Wire",
+          "amount": 22.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Caterium Wire",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Wire",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Fused Wire",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Copper Ingot",
+          "amount": 12.0
+        },
+        {
+          "item": "Caterium Ingot",
+          "amount": 3.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Wire",
+          "amount": 90.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Cable",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Wire",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Cable",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Insulated Cable",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Wire",
+          "amount": 45.0
+        },
+        {
+          "item": "Rubber",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Cable",
+          "amount": 100.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Quickwire Cable",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Quickwire",
+          "amount": 7.5
+        },
+        {
+          "item": "Rubber",
+          "amount": 5.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Cable",
+          "amount": 27.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Coated Cable",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Wire",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Cable",
+          "amount": 67.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Concrete",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Limestone",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Concrete",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Fine Concrete",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Silica",
+          "amount": 15.0
+        },
+        {
+          "item": "Limestone",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Concrete",
+          "amount": 50.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Rubber Concrete",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Limestone",
+          "amount": 100.0
+        },
+        {
+          "item": "Rubber",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Concrete",
+          "amount": 90.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Wet Concrete",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Limestone",
+          "amount": 120.0
+        },
+        {
+          "item": "Water",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Concrete",
+          "amount": 80.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Screw",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Iron Rod",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Screw",
+          "amount": 40.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Cast Screw",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 12.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Screw",
+          "amount": 50.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Steel Screw",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Steel Beam",
+          "amount": 5.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Screw",
+          "amount": 260.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Hog Protein",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Hog Remains",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Alien Protein",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Spitter Protein",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Spitter Remains",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Alien Protein",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Stinger Protein",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Stinger Remains",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Alien Protein",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Hatcher Protein",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Hatcher Remains",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Alien Protein",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alien DNA Capsule",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Alien Protein",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Alien DNA Capsule",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Power Shard (1)",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Blue Power Slug",
+          "amount": 7.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Power Shard",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Power Shard (2)",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Yellow Power Slug",
+          "amount": 5.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Power Shard",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Power Shard (5)",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Purple Power Slug",
+          "amount": 2.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Power Shard",
+          "amount": 12.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Biomass (Leaves)",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Leaves",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Biomass",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Biomass (Wood)",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Wood",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Biomass",
+          "amount": 300.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Biomass (Mycelia)",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Mycelia",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Biomass",
+          "amount": 150.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Biomass (Alien Protein)",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Alien Protein",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Biomass",
+          "amount": 1500.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Solid Biofuel",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Biomass",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Solid Biofuel",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Steel Beam",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Steel Ingot",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Beam",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Aluminum Beam",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 22.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Beam",
+          "amount": 22.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Steel Pipe",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Steel Ingot",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Pipe",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Molded Steel Pipe",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Steel Ingot",
+          "amount": 50.0
+        },
+        {
+          "item": "Concrete",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Pipe",
+          "amount": 50.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Iron Pipe",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Iron Ingot",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Steel Pipe",
+          "amount": 25.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Reinforced Iron Plate",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 30.0
+        },
+        {
+          "item": "Screw",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Bolted Iron Plate",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 90.0
+        },
+        {
+          "item": "Screw",
+          "amount": 250.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Stitched Iron Plate",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 18.75
+        },
+        {
+          "item": "Wire",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 5.625
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Adhered Iron Plate",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 11.25
+        },
+        {
+          "item": "Rubber",
+          "amount": 3.75
+        }
+      ],
+      "products": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 3.75
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Rotor",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Rod",
+          "amount": 20.0
+        },
+        {
+          "item": "Screw",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Rotor",
+          "amount": 4.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Steel Rotor",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 10.0
+        },
+        {
+          "item": "Wire",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Rotor",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Copper Rotor",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Copper Sheet",
+          "amount": 22.5
+        },
+        {
+          "item": "Screw",
+          "amount": 195.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Rotor",
+          "amount": 11.25
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Modular Frame",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 3.0
+        },
+        {
+          "item": "Iron Rod",
+          "amount": 12.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Modular Frame",
+          "amount": 2.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Steeled Frame",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 2.0
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Modular Frame",
+          "amount": 3.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Bolted Frame",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 7.5
+        },
+        {
+          "item": "Screw",
+          "amount": 140.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Modular Frame",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Encased Industrial Beam",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Steel Beam",
+          "amount": 18.0
+        },
+        {
+          "item": "Concrete",
+          "amount": 36.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 6.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Encased Industrial Pipe",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 24.0
+        },
+        {
+          "item": "Concrete",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 4.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Stator",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 15.0
+        },
+        {
+          "item": "Wire",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Stator",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Quickwire Stator",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 16.0
+        },
+        {
+          "item": "Quickwire",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Stator",
+          "amount": 8.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Motor",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Rotor",
+          "amount": 10.0
+        },
+        {
+          "item": "Stator",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Motor",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Rigor Motor",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Rotor",
+          "amount": 3.75
+        },
+        {
+          "item": "Stator",
+          "amount": 3.75
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1.25
+        }
+      ],
+      "products": [
+        {
+          "item": "Motor",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Electric Motor",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 3.75
+        },
+        {
+          "item": "Rotor",
+          "amount": 7.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Motor",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Circuit Board",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Copper Sheet",
+          "amount": 15.0
+        },
+        {
+          "item": "Plastic",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Circuit Board",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Caterium Circuit Board",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Plastic",
+          "amount": 12.5
+        },
+        {
+          "item": "Quickwire",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Circuit Board",
+          "amount": 8.75
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Silicon Circuit Board",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Copper Sheet",
+          "amount": 27.5
+        },
+        {
+          "item": "Silica",
+          "amount": 27.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Circuit Board",
+          "amount": 12.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Electrode Circuit Board",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Rubber",
+          "amount": 20.0
+        },
+        {
+          "item": "Petroleum Coke",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Circuit Board",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": true
     },
     {
       "name": "Plastic",
-      "machine": "Refinery",
-      "ingredients": [{"item": "Crude Oil", "amount": 30}],
-      "products": [{"item": "Plastic", "amount": 20}, {"item": "Heavy Oil Residue", "amount": 10}],
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Plastic",
+          "amount": 20.0
+        }
+      ],
       "is_alternate": false
     },
     {
-      "name": "Rubber",
-      "machine": "Refinery",
-      "ingredients": [{"item": "Crude Oil", "amount": 30}],
-      "products": [{"item": "Rubber", "amount": 20}, {"item": "Heavy Oil Residue", "amount": 20}],
-      "is_alternate": false
+      "name": "Alternate: Recycled Plastic",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Rubber",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Plastic",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": true
     },
     {
       "name": "Residual Plastic",
-      "machine": "Refinery",
-      "ingredients": [{"item": "Polymer Resin", "amount": 60}, {"item": "Water", "amount": 20}],
-      "products": [{"item": "Plastic", "amount": 20}],
-      "is_alternate": false
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Polymer Resin",
+          "amount": 60.0
+        },
+        {
+          "item": "Water",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Plastic",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": true
     },
     {
-      "name": "Residual Rubber",
-      "machine": "Refinery",
-      "ingredients": [{"item": "Polymer Resin", "amount": 40}, {"item": "Water", "amount": 40}],
-      "products": [{"item": "Rubber", "amount": 20}],
-      "is_alternate": false
-    },
-    {
-      "name": "Petroleum Coke",
-      "machine": "Refinery",
-      "ingredients": [{"item": "Heavy Oil Residue", "amount": 40}],
-      "products": [{"item": "Petroleum Coke", "amount": 120}],
+      "name": "Fuel",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Polymer Resin",
+          "amount": 30.0
+        }
+      ],
       "is_alternate": false
     },
     {
       "name": "Residual Fuel",
-      "machine": "Refinery",
-      "ingredients": [{"item": "Heavy Oil Residue", "amount": 60}],
-      "products": [{"item": "Fuel", "amount": 40}],
+      "machine": "Refinery [refining]",
+      "ingredients": [],
+      "products": [],
       "is_alternate": false
     },
     {
-      "name": "Alternate: Heavy Oil Residue",
-      "machine": "Refinery",
-      "ingredients": [{"item": "Crude Oil", "amount": 30}],
-      "products": [{"item": "Heavy Oil Residue", "amount": 40}, {"item": "Polymer Resin", "amount": 20}],
+      "name": "Alternate: Diluted Fuel",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Water",
+          "amount": 100.0
+        }
+      ],
+      "products": [],
       "is_alternate": true
     },
     {
-      "name": "Alternate: Diluted Fuel",
-      "machine": "Blender",
-      "ingredients": [{"item": "Heavy Oil Residue", "amount": 50}, {"item": "Water", "amount": 100}],
-      "products": [{"item": "Fuel", "amount": 100}],
+      "name": "Rubber",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Rubber",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Recycled Rubber",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Plastic",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Rubber",
+          "amount": 60.0
+        }
+      ],
       "is_alternate": true
+    },
+    {
+      "name": "Residual Rubber",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Polymer Resin",
+          "amount": 40.0
+        },
+        {
+          "item": "Water",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Rubber",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Petroleum Coke",
+      "machine": "Refinery [refining]",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Petroleum Coke",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Polymer Resin",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Polymer Resin",
+          "amount": 130.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Heavy Oil Residue",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Polymer Resin",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Heavy Modular Frame",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Modular Frame",
+          "amount": 10.0
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 40.0
+        },
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 10.0
+        },
+        {
+          "item": "Screw",
+          "amount": 240.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 2.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Heavy Encased Frame",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Modular Frame",
+          "amount": 7.5
+        },
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 9.375
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 33.75
+        },
+        {
+          "item": "Concrete",
+          "amount": 20.625
+        }
+      ],
+      "products": [
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 2.8125
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Heavy Flexible Frame",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Modular Frame",
+          "amount": 18.75
+        },
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 11.25
+        },
+        {
+          "item": "Rubber",
+          "amount": 75.0
+        },
+        {
+          "item": "Screw",
+          "amount": 390.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 3.75
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Computer",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Circuit Board",
+          "amount": 10.0
+        },
+        {
+          "item": "Cable",
+          "amount": 20.0
+        },
+        {
+          "item": "Plastic",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Computer",
+          "amount": 2.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Caterium Computer",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Circuit Board",
+          "amount": 15.0
+        },
+        {
+          "item": "Quickwire",
+          "amount": 52.5
+        },
+        {
+          "item": "Rubber",
+          "amount": 22.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Computer",
+          "amount": 3.75
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Crystal Computer",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Circuit Board",
+          "amount": 5.0
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1.6666666666666667
+        }
+      ],
+      "products": [
+        {
+          "item": "Computer",
+          "amount": 3.3333333333333335
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Caterium Ingot",
+      "machine": "smelting1",
+      "ingredients": [
+        {
+          "item": "Caterium Ore",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Pure Caterium Ingot",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Caterium Ore",
+          "amount": 24.0
+        },
+        {
+          "item": "Water",
+          "amount": 24.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 12.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Leached Caterium Ingot",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Caterium Ore",
+          "amount": 54.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 36.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Quickwire",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 12.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Quickwire",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Fused Quickwire",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Caterium Ingot",
+          "amount": 7.5
+        },
+        {
+          "item": "Copper Ingot",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Quickwire",
+          "amount": 90.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Supercomputer",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Computer",
+          "amount": 7.5
+        },
+        {
+          "item": "AI Limiter",
+          "amount": 3.75
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 5.625
+        },
+        {
+          "item": "Plastic",
+          "amount": 52.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Supercomputer",
+          "amount": 1.875
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Super-State Computer",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Computer",
+          "amount": 7.199999999999999
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 2.4
+        },
+        {
+          "item": "Battery",
+          "amount": 24.0
+        },
+        {
+          "item": "Wire",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Supercomputer",
+          "amount": 2.4
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: OC Supercomputer",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Radio Control Unit",
+          "amount": 6.0
+        },
+        {
+          "item": "Cooling System",
+          "amount": 6.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Supercomputer",
+          "amount": 3.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "High-Speed Connector",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Quickwire",
+          "amount": 210.0
+        },
+        {
+          "item": "Cable",
+          "amount": 37.5
+        },
+        {
+          "item": "Circuit Board",
+          "amount": 3.75
+        }
+      ],
+      "products": [
+        {
+          "item": "High-Speed Connector",
+          "amount": 3.75
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Silicone High-Speed Connector",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Quickwire",
+          "amount": 90.0
+        },
+        {
+          "item": "Silica",
+          "amount": 37.5
+        },
+        {
+          "item": "Circuit Board",
+          "amount": 3.0
+        }
+      ],
+      "products": [
+        {
+          "item": "High-Speed Connector",
+          "amount": 3.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "AI Limiter",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Copper Sheet",
+          "amount": 25.0
+        },
+        {
+          "item": "Quickwire",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "AI Limiter",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Plastic AI Limiter",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Quickwire",
+          "amount": 120.0
+        },
+        {
+          "item": "Plastic",
+          "amount": 28.0
+        }
+      ],
+      "products": [
+        {
+          "item": "AI Limiter",
+          "amount": 8.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Fabric",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Mycelia",
+          "amount": 15.0
+        },
+        {
+          "item": "Biomass",
+          "amount": 75.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Fabric",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Polyester Fabric",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Polymer Resin",
+          "amount": 30.0
+        },
+        {
+          "item": "Water",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Fabric",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Gas Filter",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Fabric",
+          "amount": 15.0
+        },
+        {
+          "item": "Coal",
+          "amount": 30.0
+        },
+        {
+          "item": "Iron Plate",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Gas Filter",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Quartz Crystal",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Raw Quartz",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Quartz Crystal",
+          "amount": 22.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Pure Quartz Crystal",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Raw Quartz",
+          "amount": 67.5
+        },
+        {
+          "item": "Water",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Quartz Crystal",
+          "amount": 52.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Quartz Purification",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Raw Quartz",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Quartz Crystal",
+          "amount": 75.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Crystal Oscillator",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Quartz Crystal",
+          "amount": 18.0
+        },
+        {
+          "item": "Cable",
+          "amount": 14.0
+        },
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 2.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Insulated Crystal Oscillator",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Quartz Crystal",
+          "amount": 18.75
+        },
+        {
+          "item": "Rubber",
+          "amount": 13.125
+        },
+        {
+          "item": "AI Limiter",
+          "amount": 1.875
+        }
+      ],
+      "products": [
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1.875
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Black Powder",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 15.0
+        },
+        {
+          "item": "Sulfur",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Black Powder",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Fine Black Powder",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Sulfur",
+          "amount": 7.5
+        },
+        {
+          "item": "Compacted Coal",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Black Powder",
+          "amount": 45.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Smokeless Powder",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Black Powder",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Smokeless Powder",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Nobelisk",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Black Powder",
+          "amount": 20.0
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Nobelisk",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Gas Nobelisk",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Nobelisk",
+          "amount": 5.0
+        },
+        {
+          "item": "Biomass",
+          "amount": 50.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Gas Nobelisk",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Cluster Nobelisk",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Nobelisk",
+          "amount": 7.5
+        },
+        {
+          "item": "Smokeless Powder",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Cluster Nobelisk",
+          "amount": 2.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Pulse Nobelisk",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Nobelisk",
+          "amount": 5.0
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Pulse Nobelisk",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Nuke Nobelisk",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Nobelisk",
+          "amount": 2.5
+        },
+        {
+          "item": "Encased Uranium Cell",
+          "amount": 10.0
+        },
+        {
+          "item": "Smokeless Powder",
+          "amount": 5.0
+        },
+        {
+          "item": "AI Limiter",
+          "amount": 3.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Nuke Nobelisk",
+          "amount": 2.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Rifle Ammo",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Copper Sheet",
+          "amount": 15.0
+        },
+        {
+          "item": "Smokeless Powder",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Rifle Ammo",
+          "amount": 75.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Homing Rifle Ammo",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Rifle Ammo",
+          "amount": 50.0
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 2.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Homing Rifle Ammo",
+          "amount": 25.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Turbo Rifle Ammo",
+      "machine": "Manufacturer [blending]",
+      "ingredients": [
+        {
+          "item": "Rifle Ammo",
+          "amount": 125.0
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 15.0
+        },
+        {
+          "item": "Packaged Turbofuel",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbo Rifle Ammo",
+          "amount": 250.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Turbo Rifle Ammo",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Rifle Ammo",
+          "amount": 125.0
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbo Rifle Ammo",
+          "amount": 250.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Compacted Coal",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 25.0
+        },
+        {
+          "item": "Sulfur",
+          "amount": 25.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Compacted Coal",
+          "amount": 25.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Charcoal",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Wood",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Coal",
+          "amount": 150.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Biocoal",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Biomass",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Coal",
+          "amount": 45.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Turbofuel",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Compacted Coal",
+          "amount": 15.0
+        }
+      ],
+      "products": [],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Turbo Heavy Fuel",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Compacted Coal",
+          "amount": 30.0
+        }
+      ],
+      "products": [],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Turbo Blend Fuel",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Sulfur",
+          "amount": 22.5
+        },
+        {
+          "item": "Petroleum Coke",
+          "amount": 22.5
+        }
+      ],
+      "products": [],
+      "is_alternate": true
+    },
+    {
+      "name": "Rocket Fuel",
+      "machine": "blending",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Compacted Coal",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Nitro Rocket Fuel",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Nitrogen Gas",
+          "amount": 75.0
+        },
+        {
+          "item": "Sulfur",
+          "amount": 100.0
+        },
+        {
+          "item": "Coal",
+          "amount": 50.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Compacted Coal",
+          "amount": 25.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Silica",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Raw Quartz",
+          "amount": 22.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Silica",
+          "amount": 37.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Cheap Silica",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Raw Quartz",
+          "amount": 22.5
+        },
+        {
+          "item": "Limestone",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Silica",
+          "amount": 52.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Distilled Silica",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Limestone",
+          "amount": 50.0
+        },
+        {
+          "item": "Water",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Silica",
+          "amount": 270.0
+        },
+        {
+          "item": "Water",
+          "amount": 80.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Aluminum Ingot",
+      "machine": "smelting2",
+      "ingredients": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 90.0
+        },
+        {
+          "item": "Silica",
+          "amount": 75.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Pure Aluminum Ingot",
+      "machine": "smelting1",
+      "ingredients": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alclad Aluminum Sheet",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 30.0
+        },
+        {
+          "item": "Copper Ingot",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Alclad Aluminum Sheet",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Aluminum Casing",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 90.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Casing",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Alclad Casing",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 150.0
+        },
+        {
+          "item": "Copper Ingot",
+          "amount": 75.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Casing",
+          "amount": 112.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Heat Sink",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Alclad Aluminum Sheet",
+          "amount": 37.5
+        },
+        {
+          "item": "Copper Sheet",
+          "amount": 22.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Heat Sink",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Heat Exchanger",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Aluminum Casing",
+          "amount": 30.0
+        },
+        {
+          "item": "Rubber",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Heat Sink",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Radio Control Unit",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Aluminum Casing",
+          "amount": 40.0
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1.25
+        },
+        {
+          "item": "Computer",
+          "amount": 2.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Radio Control Unit",
+          "amount": 2.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Radio Connection Unit",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Heat Sink",
+          "amount": 15.0
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 7.5
+        },
+        {
+          "item": "Quartz Crystal",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Radio Control Unit",
+          "amount": 3.75
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Radio Control System",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Crystal Oscillator",
+          "amount": 1.5
+        },
+        {
+          "item": "Circuit Board",
+          "amount": 15.0
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 90.0
+        },
+        {
+          "item": "Rubber",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Radio Control Unit",
+          "amount": 4.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Turbo Motor",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Cooling System",
+          "amount": 7.5
+        },
+        {
+          "item": "Radio Control Unit",
+          "amount": 3.75
+        },
+        {
+          "item": "Motor",
+          "amount": 7.5
+        },
+        {
+          "item": "Rubber",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbo Motor",
+          "amount": 1.875
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Turbo Electric Motor",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Motor",
+          "amount": 6.5625
+        },
+        {
+          "item": "Radio Control Unit",
+          "amount": 8.4375
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 4.6875
+        },
+        {
+          "item": "Rotor",
+          "amount": 6.5625
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbo Motor",
+          "amount": 2.8125
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Turbo Pressure Motor",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Motor",
+          "amount": 7.5
+        },
+        {
+          "item": "Pressure Conversion Cube",
+          "amount": 1.875
+        },
+        {
+          "item": "Packaged Nitrogen Gas",
+          "amount": 45.0
+        },
+        {
+          "item": "Stator",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Turbo Motor",
+          "amount": 3.75
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Battery",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Aluminum Casing",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Battery",
+          "amount": 20.0
+        },
+        {
+          "item": "Water",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Classic Battery",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Sulfur",
+          "amount": 45.0
+        },
+        {
+          "item": "Alclad Aluminum Sheet",
+          "amount": 52.5
+        },
+        {
+          "item": "Plastic",
+          "amount": 60.0
+        },
+        {
+          "item": "Wire",
+          "amount": 90.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Battery",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Encased Uranium Cell",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Uranium",
+          "amount": 50.0
+        },
+        {
+          "item": "Concrete",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Uranium Cell",
+          "amount": 25.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Infused Uranium Cell",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Uranium",
+          "amount": 25.0
+        },
+        {
+          "item": "Silica",
+          "amount": 15.0
+        },
+        {
+          "item": "Sulfur",
+          "amount": 25.0
+        },
+        {
+          "item": "Quickwire",
+          "amount": 75.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Uranium Cell",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Non-Fissile Uranium",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Uranium Waste",
+          "amount": 37.5
+        },
+        {
+          "item": "Silica",
+          "amount": 25.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Non-fissile Uranium",
+          "amount": 50.0
+        },
+        {
+          "item": "Water",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Fertile Uranium",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Uranium",
+          "amount": 25.0
+        },
+        {
+          "item": "Uranium Waste",
+          "amount": 25.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Non-fissile Uranium",
+          "amount": 100.0
+        },
+        {
+          "item": "Water",
+          "amount": 40.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Electromagnetic Control Rod",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Stator",
+          "amount": 6.0
+        },
+        {
+          "item": "AI Limiter",
+          "amount": 4.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 4.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Electromagnetic Connection Rod",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Stator",
+          "amount": 8.0
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 4.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 8.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Nitric Acid",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Nitrogen Gas",
+          "amount": 120.0
+        },
+        {
+          "item": "Water",
+          "amount": 30.0
+        },
+        {
+          "item": "Iron Plate",
+          "amount": 10.0
+        }
+      ],
+      "products": [],
+      "is_alternate": false
+    },
+    {
+      "name": "Uranium Fuel Rod",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Encased Uranium Cell",
+          "amount": 20.0
+        },
+        {
+          "item": "Encased Industrial Beam",
+          "amount": 1.2000000000000002
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 2.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Uranium Fuel Rod",
+          "amount": 0.4
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Uranium Fuel Unit",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Encased Uranium Cell",
+          "amount": 20.0
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 2.0
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 0.6000000000000001
+        },
+        {
+          "item": "Rotor",
+          "amount": 2.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Uranium Fuel Rod",
+          "amount": 0.6000000000000001
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Plutonium Pellet",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Non-fissile Uranium",
+          "amount": 100.0
+        },
+        {
+          "item": "Uranium Waste",
+          "amount": 25.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Plutonium Pellet",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Encased Plutonium Cell",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Plutonium Pellet",
+          "amount": 10.0
+        },
+        {
+          "item": "Concrete",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Plutonium Cell",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Instant Plutonium Cell",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Non-fissile Uranium",
+          "amount": 75.0
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Encased Plutonium Cell",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Plutonium Fuel Rod",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Encased Plutonium Cell",
+          "amount": 7.5
+        },
+        {
+          "item": "Steel Beam",
+          "amount": 4.5
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 1.5
+        },
+        {
+          "item": "Heat Sink",
+          "amount": 2.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Plutonium Fuel Rod",
+          "amount": 0.25
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Plutonium Fuel Unit",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Encased Plutonium Cell",
+          "amount": 10.0
+        },
+        {
+          "item": "Pressure Conversion Cube",
+          "amount": 0.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Plutonium Fuel Rod",
+          "amount": 0.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Iodine-Infused Filter",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Gas Filter",
+          "amount": 3.75
+        },
+        {
+          "item": "Quickwire",
+          "amount": 30.0
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 3.75
+        }
+      ],
+      "products": [
+        {
+          "item": "Iodine Infused Filter",
+          "amount": 3.75
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Copper Sheet",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Copper Ingot",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Sheet",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Steamed Copper Sheet",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Copper Ingot",
+          "amount": 22.5
+        },
+        {
+          "item": "Water",
+          "amount": 22.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Sheet",
+          "amount": 22.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Copper Powder",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Copper Ingot",
+          "amount": 300.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Powder",
+          "amount": 50.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Empty Canister",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Plastic",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Empty Canister",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Steel Canister",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Steel Ingot",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Empty Canister",
+          "amount": 40.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Coated Iron Canister",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Plate",
+          "amount": 30.0
+        },
+        {
+          "item": "Copper Sheet",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Empty Canister",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Empty Fluid Tank",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Aluminum Ingot",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Empty Fluid Tank",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Liquid Biofuel",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Solid Biofuel",
+          "amount": 90.0
+        },
+        {
+          "item": "Water",
+          "amount": 45.0
+        }
+      ],
+      "products": [],
+      "is_alternate": false
+    },
+    {
+      "name": "Aluminum Scrap",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 360.0
+        },
+        {
+          "item": "Water",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Electrode Aluminum Scrap",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Petroleum Coke",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 300.0
+        },
+        {
+          "item": "Water",
+          "amount": 105.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Instant Scrap",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Bauxite",
+          "amount": 150.0
+        },
+        {
+          "item": "Coal",
+          "amount": 100.0
+        },
+        {
+          "item": "Water",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Aluminum Scrap",
+          "amount": 300.0
+        },
+        {
+          "item": "Water",
+          "amount": 50.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alumina Solution",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Bauxite",
+          "amount": 120.0
+        },
+        {
+          "item": "Water",
+          "amount": 180.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Silica",
+          "amount": 50.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Sloppy Alumina",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Bauxite",
+          "amount": 200.0
+        },
+        {
+          "item": "Water",
+          "amount": 200.0
+        }
+      ],
+      "products": [],
+      "is_alternate": true
+    },
+    {
+      "name": "Sulfuric Acid",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Sulfur",
+          "amount": 50.0
+        },
+        {
+          "item": "Water",
+          "amount": 50.0
+        }
+      ],
+      "products": [],
+      "is_alternate": false
+    },
+    {
+      "name": "Fused Modular Frame",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 1.5
+        },
+        {
+          "item": "Aluminum Casing",
+          "amount": 75.0
+        },
+        {
+          "item": "Nitrogen Gas",
+          "amount": 37.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Fused Modular Frame",
+          "amount": 1.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Heat-Fused Frame",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 3.0
+        },
+        {
+          "item": "Aluminum Ingot",
+          "amount": 150.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Fused Modular Frame",
+          "amount": 3.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Pressure Conversion Cube",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Fused Modular Frame",
+          "amount": 1.0
+        },
+        {
+          "item": "Radio Control Unit",
+          "amount": 2.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Pressure Conversion Cube",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Cooling System",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Heat Sink",
+          "amount": 12.0
+        },
+        {
+          "item": "Rubber",
+          "amount": 12.0
+        },
+        {
+          "item": "Water",
+          "amount": 30.0
+        },
+        {
+          "item": "Nitrogen Gas",
+          "amount": 150.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Cooling System",
+          "amount": 6.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Cooling Device",
+      "machine": "blending",
+      "ingredients": [
+        {
+          "item": "Heat Sink",
+          "amount": 10.0
+        },
+        {
+          "item": "Motor",
+          "amount": 2.5
+        },
+        {
+          "item": "Nitrogen Gas",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Cooling System",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Smart Plating",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 2.0
+        },
+        {
+          "item": "Rotor",
+          "amount": 2.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Smart Plating",
+          "amount": 2.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Plastic Smart Plating",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Reinforced Iron Plate",
+          "amount": 2.5
+        },
+        {
+          "item": "Rotor",
+          "amount": 2.5
+        },
+        {
+          "item": "Plastic",
+          "amount": 7.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Smart Plating",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Versatile Framework",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Modular Frame",
+          "amount": 2.5
+        },
+        {
+          "item": "Steel Beam",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Versatile Framework",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Flexible Framework",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Modular Frame",
+          "amount": 3.75
+        },
+        {
+          "item": "Steel Beam",
+          "amount": 22.5
+        },
+        {
+          "item": "Rubber",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Versatile Framework",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Automated Wiring",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Stator",
+          "amount": 2.5
+        },
+        {
+          "item": "Cable",
+          "amount": 50.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Automated Wiring",
+          "amount": 2.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Automated Speed Wiring",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Stator",
+          "amount": 3.75
+        },
+        {
+          "item": "Wire",
+          "amount": 75.0
+        },
+        {
+          "item": "High-Speed Connector",
+          "amount": 1.875
+        }
+      ],
+      "products": [
+        {
+          "item": "Automated Wiring",
+          "amount": 7.5
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Modular Engine",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Motor",
+          "amount": 2.0
+        },
+        {
+          "item": "Rubber",
+          "amount": 15.0
+        },
+        {
+          "item": "Smart Plating",
+          "amount": 2.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Modular Engine",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Adaptive Control Unit",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Automated Wiring",
+          "amount": 5.0
+        },
+        {
+          "item": "Circuit Board",
+          "amount": 5.0
+        },
+        {
+          "item": "Heavy Modular Frame",
+          "amount": 1.0
+        },
+        {
+          "item": "Computer",
+          "amount": 2.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Adaptive Control Unit",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Assembly Director System",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Adaptive Control Unit",
+          "amount": 1.5
+        },
+        {
+          "item": "Supercomputer",
+          "amount": 0.75
+        }
+      ],
+      "products": [
+        {
+          "item": "Assembly Director System",
+          "amount": 0.75
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Magnetic Field Generator",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Versatile Framework",
+          "amount": 2.5
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 1.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Magnetic Field Generator",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Thermal Propulsion Rocket",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Modular Engine",
+          "amount": 2.5
+        },
+        {
+          "item": "Turbo Motor",
+          "amount": 1.0
+        },
+        {
+          "item": "Cooling System",
+          "amount": 3.0
+        },
+        {
+          "item": "Fused Modular Frame",
+          "amount": 1.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Thermal Propulsion Rocket",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Nuclear Pasta",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Copper Powder",
+          "amount": 100.0
+        },
+        {
+          "item": "Pressure Conversion Cube",
+          "amount": 0.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Nuclear Pasta",
+          "amount": 0.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Automated Miner",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Steel Pipe",
+          "amount": 4.0
+        },
+        {
+          "item": "Iron Plate",
+          "amount": 4.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Portable Miner",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Reanimated SAM",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "SAM",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "SAM Fluctuator",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 60.0
+        },
+        {
+          "item": "Wire",
+          "amount": 50.0
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "SAM Fluctuator",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Iron Rebar",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Iron Rod",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Rebar",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Stun Rebar",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Rebar",
+          "amount": 10.0
+        },
+        {
+          "item": "Quickwire",
+          "amount": 50.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Stun Rebar",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Shatter Rebar",
+      "machine": "Assembler [crafting2]",
+      "ingredients": [
+        {
+          "item": "Iron Rebar",
+          "amount": 10.0
+        },
+        {
+          "item": "Quartz Crystal",
+          "amount": 15.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Shatter Rebar",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Explosive Rebar",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Iron Rebar",
+          "amount": 10.0
+        },
+        {
+          "item": "Smokeless Powder",
+          "amount": 10.0
+        },
+        {
+          "item": "Steel Pipe",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Explosive Rebar",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Diamonds",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 600.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Diamonds",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Petroleum Diamonds",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Petroleum Coke",
+          "amount": 720.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Diamonds",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Turbo Diamonds",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 600.0
+        },
+        {
+          "item": "Packaged Turbofuel",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Diamonds",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Oil-Based Diamonds",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Crude Oil",
+          "amount": 200.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Diamonds",
+          "amount": 40.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Cloudy Diamonds",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 240.0
+        },
+        {
+          "item": "Limestone",
+          "amount": 480.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Diamonds",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Pink Diamonds",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Coal",
+          "amount": 120.0
+        },
+        {
+          "item": "Quartz Crystal",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Diamonds",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Time Crystal",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Diamonds",
+          "amount": 12.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Time Crystal",
+          "amount": 6.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Ficsite Ingot (Iron)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 40.0
+        },
+        {
+          "item": "Iron Ingot",
+          "amount": 240.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Ficsite Ingot",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Ficsite Ingot (Caterium)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 45.0
+        },
+        {
+          "item": "Caterium Ingot",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Ficsite Ingot",
+          "amount": 15.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Ficsite Ingot (Aluminum)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 60.0
+        },
+        {
+          "item": "Aluminum Ingot",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Ficsite Ingot",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Ficsite Trigon",
+      "machine": "Constructor [crafting1]",
+      "ingredients": [
+        {
+          "item": "Ficsite Ingot",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Ficsite Trigon",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Excited Photonic Matter",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [],
+      "products": [],
+      "is_alternate": false
+    },
+    {
+      "name": "Dark Matter Residue",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 50.0
+        }
+      ],
+      "products": [],
+      "is_alternate": false
+    },
+    {
+      "name": "Dark Matter Crystal",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Diamonds",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 30.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Dark Matter Crystallization",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 20.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Dark Matter Trap",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Time Crystal",
+          "amount": 30.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 60.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Ficsonium",
+      "machine": "Particle Accelerator [accelerating]",
+      "ingredients": [
+        {
+          "item": "Plutonium Waste",
+          "amount": 10.0
+        },
+        {
+          "item": "Singularity Cell",
+          "amount": 10.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Ficsonium",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Superposition Oscillator",
+      "machine": "Quantum Encoder [encoding]",
+      "ingredients": [
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 30.0
+        },
+        {
+          "item": "Crystal Oscillator",
+          "amount": 5.0
+        },
+        {
+          "item": "Alclad Aluminum Sheet",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Superposition Oscillator",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Neural-Quantum Processor",
+      "machine": "Quantum Encoder [encoding]",
+      "ingredients": [
+        {
+          "item": "Time Crystal",
+          "amount": 15.0
+        },
+        {
+          "item": "Supercomputer",
+          "amount": 3.0
+        },
+        {
+          "item": "Ficsite Trigon",
+          "amount": 45.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Neural-Quantum Processor",
+          "amount": 3.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Ficsonium Fuel Rod",
+      "machine": "Quantum Encoder [encoding]",
+      "ingredients": [
+        {
+          "item": "Ficsonium",
+          "amount": 5.0
+        },
+        {
+          "item": "Electromagnetic Control Rod",
+          "amount": 5.0
+        },
+        {
+          "item": "Ficsite Trigon",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Ficsonium Fuel Rod",
+          "amount": 2.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Synthetic Power Shard",
+      "machine": "Quantum Encoder [encoding]",
+      "ingredients": [
+        {
+          "item": "Time Crystal",
+          "amount": 10.0
+        },
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 10.0
+        },
+        {
+          "item": "Quartz Crystal",
+          "amount": 60.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Power Shard",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Ionized Fuel",
+      "machine": "Refinery [refining]",
+      "ingredients": [
+        {
+          "item": "Power Shard",
+          "amount": 2.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Compacted Coal",
+          "amount": 5.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Dark-Ion Fuel",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Packaged Rocket Fuel",
+          "amount": 240.0
+        },
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 80.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Compacted Coal",
+          "amount": 40.0
+        }
+      ],
+      "is_alternate": true
+    },
+    {
+      "name": "Singularity Cell",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Nuclear Pasta",
+          "amount": 1.0
+        },
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 20.0
+        },
+        {
+          "item": "Iron Plate",
+          "amount": 100.0
+        },
+        {
+          "item": "Concrete",
+          "amount": 200.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Singularity Cell",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Ballistic Warp Drive",
+      "machine": "Manufacturer [crafting3]",
+      "ingredients": [
+        {
+          "item": "Thermal Propulsion Rocket",
+          "amount": 1.0
+        },
+        {
+          "item": "Singularity Cell",
+          "amount": 5.0
+        },
+        {
+          "item": "Superposition Oscillator",
+          "amount": 2.0
+        },
+        {
+          "item": "Dark Matter Crystal",
+          "amount": 40.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Ballistic Warp Drive",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "AI Expansion Server",
+      "machine": "Quantum Encoder [encoding]",
+      "ingredients": [
+        {
+          "item": "Magnetic Field Generator",
+          "amount": 4.0
+        },
+        {
+          "item": "Neural-Quantum Processor",
+          "amount": 4.0
+        },
+        {
+          "item": "Superposition Oscillator",
+          "amount": 4.0
+        }
+      ],
+      "products": [
+        {
+          "item": "AI Expansion Server",
+          "amount": 4.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Alien Power Matrix",
+      "machine": "Quantum Encoder [encoding]",
+      "ingredients": [
+        {
+          "item": "SAM Fluctuator",
+          "amount": 12.5
+        },
+        {
+          "item": "Power Shard",
+          "amount": 7.5
+        },
+        {
+          "item": "Superposition Oscillator",
+          "amount": 7.5
+        }
+      ],
+      "products": [
+        {
+          "item": "Alien Power Matrix",
+          "amount": 2.5
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Iron Ore (Limestone)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Limestone",
+          "amount": 240.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Iron Ore",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Copper Ore (Sulfur)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Sulfur",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Ore",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Copper Ore (Quartz)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Raw Quartz",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Copper Ore",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Limestone (Sulfur)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Sulfur",
+          "amount": 20.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Limestone",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Coal (Limestone)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Limestone",
+          "amount": 360.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Coal",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Coal (Iron)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Iron Ore",
+          "amount": 180.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Coal",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Sulfur (Iron)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Iron Ore",
+          "amount": 300.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Sulfur",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Sulfur (Coal)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Coal",
+          "amount": 200.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Sulfur",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Caterium Ore (Copper)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Copper Ore",
+          "amount": 150.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Caterium Ore",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Caterium Ore (Quartz)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Raw Quartz",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Caterium Ore",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Raw Quartz (Coal)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Coal",
+          "amount": 240.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Raw Quartz",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Raw Quartz (Bauxite)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Bauxite",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Raw Quartz",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Bauxite (Copper)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Copper Ore",
+          "amount": 180.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Bauxite",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Bauxite (Caterium)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Caterium Ore",
+          "amount": 150.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Bauxite",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Nitrogen Gas (Caterium)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Caterium Ore",
+          "amount": 120.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Nitrogen Gas",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Nitrogen Gas (Bauxite)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Bauxite",
+          "amount": 100.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Nitrogen Gas",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Uranium Ore (Bauxite)",
+      "machine": "Smelter / Foundry [converting]",
+      "ingredients": [
+        {
+          "item": "Reanimated SAM",
+          "amount": 10.0
+        },
+        {
+          "item": "Bauxite",
+          "amount": 480.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Uranium",
+          "amount": 120.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Reactor Cycle (Uranium)",
+      "machine": "Nuclear Power Plant [nuke-reacting]",
+      "ingredients": [
+        {
+          "item": "Uranium Fuel Rod",
+          "amount": 0.2
+        },
+        {
+          "item": "Water",
+          "amount": 240.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Uranium Waste",
+          "amount": 10.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Reactor Cycle (Plutonium)",
+      "machine": "Nuclear Power Plant [nuke-reacting]",
+      "ingredients": [
+        {
+          "item": "Plutonium Fuel Rod",
+          "amount": 0.1
+        },
+        {
+          "item": "Water",
+          "amount": 240.0
+        }
+      ],
+      "products": [
+        {
+          "item": "Plutonium Waste",
+          "amount": 1.0
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Iron Ore",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Iron Ore",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Copper Ore",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Copper Ore",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Coal",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Coal",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Limestone",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Limestone",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Caterium Ore",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Caterium Ore",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Sulfur",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Sulfur",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Raw Quartz",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Raw Quartz",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Crude Oil",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Crude Oil",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Bauxite",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Bauxite",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Uranium",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Uranium",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Water",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Water",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract Nitrogen Gas",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "Nitrogen Gas",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
+    },
+    {
+      "name": "Extract SAM",
+      "machine": "Extractor",
+      "ingredients": [],
+      "products": [
+        {
+          "item": "SAM",
+          "amount": 60
+        }
+      ],
+      "is_alternate": false
     },
     {
       "name": "Awesome Sink",
       "machine": "Awesome Sink",
-      "ingredients": [{"item": "Any", "amount": 0}],
+      "ingredients": [
+        {
+          "item": "Any",
+          "amount": 0
+        }
+      ],
       "products": [],
       "is_alternate": false
     }

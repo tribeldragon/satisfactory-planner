@@ -13,13 +13,10 @@ class Node:
 
     def calculate(self):
         if self.recipe["name"] == "Awesome Sink":
-            # Sink consumes unlimited any item, producing 0 items.
-            # We treat target_amount here as the amount of input we want to sink
             self.machine_count = 1
             if self.target_amount > 0:
                  self.inputs["Any"] = self.target_amount
             else:
-                 # Default generic input so it has an input pin
                  self.inputs["Any"] = 0
             return
 
@@ -42,7 +39,7 @@ class CalculationEngine:
     def __init__(self, data_manager):
         self.data_manager = data_manager
         self.nodes = []
-        self.links = [] # (source_node_id, source_item, target_node_id, target_item, amount)
+        self.links = []
 
     def add_manual_node(self, recipe_name, amount):
         recipe = self.data_manager.get_recipe_by_name(recipe_name)
@@ -52,12 +49,26 @@ class CalculationEngine:
             return node
         return None
 
-    def auto_generate(self, target_item, target_amount):
+    def auto_generate(self, target_item, target_amount, depth=0):
+        # Prevent infinite recursion from looping recipes
+        if depth > 50:
+            print(f"Max depth reached generating {target_item}")
+            return None
+
         recipes = self.data_manager.get_recipes_producing(target_item)
         if not recipes:
             return None
 
+        # Prefer the primary (non-alternate) recipe if available
         chosen_recipe = recipes[0]
+        for r in recipes:
+            if not r["is_alternate"] and not r["name"].startswith("Alternate:"):
+                chosen_recipe = r
+                break
+
+        # Wait, if target_amount is 0, just return none
+        if target_amount <= 0:
+            return None
 
         primary_product_amount = 0
         for p in chosen_recipe["products"]:
@@ -73,7 +84,7 @@ class CalculationEngine:
         self.nodes.append(node)
 
         for ing, amount in node.inputs.items():
-            child_node = self.auto_generate(ing, amount)
+            child_node = self.auto_generate(ing, amount, depth + 1)
             if child_node:
                 self.links.append((child_node.id, ing, node.id, ing, amount))
 
