@@ -1,0 +1,107 @@
+{
+  "items": [
+    "Iron Ore",
+    "Iron Ingot",
+    "Iron Plate",
+    "Iron Rod",
+    "Copper Ore",
+    "Copper Ingot",
+    "Wire",
+    "Cable",
+    "Crude Oil",
+    "Plastic",
+    "Rubber",
+    "Heavy Oil Residue",
+    "Fuel",
+    "Petroleum Coke",
+    "Polymer Resin",
+    "Water",
+    "Awesome Sink"
+  ],
+  "recipes": [
+    {
+      "name": "Iron Ingot",
+      "machine": "Smelter",
+      "ingredients": [{"item": "Iron Ore", "amount": 30}],
+      "products": [{"item": "Iron Ingot", "amount": 30}],
+      "is_alternate": false
+    },
+    {
+      "name": "Iron Plate",
+      "machine": "Constructor",
+      "ingredients": [{"item": "Iron Ingot", "amount": 30}],
+      "products": [{"item": "Iron Plate", "amount": 20}],
+      "is_alternate": false
+    },
+    {
+      "name": "Iron Rod",
+      "machine": "Constructor",
+      "ingredients": [{"item": "Iron Ingot", "amount": 15}],
+      "products": [{"item": "Iron Rod", "amount": 15}],
+      "is_alternate": false
+    },
+    {
+      "name": "Plastic",
+      "machine": "Refinery",
+      "ingredients": [{"item": "Crude Oil", "amount": 30}],
+      "products": [{"item": "Plastic", "amount": 20}, {"item": "Heavy Oil Residue", "amount": 10}],
+      "is_alternate": false
+    },
+    {
+      "name": "Rubber",
+      "machine": "Refinery",
+      "ingredients": [{"item": "Crude Oil", "amount": 30}],
+      "products": [{"item": "Rubber", "amount": 20}, {"item": "Heavy Oil Residue", "amount": 20}],
+      "is_alternate": false
+    },
+    {
+      "name": "Residual Plastic",
+      "machine": "Refinery",
+      "ingredients": [{"item": "Polymer Resin", "amount": 60}, {"item": "Water", "amount": 20}],
+      "products": [{"item": "Plastic", "amount": 20}],
+      "is_alternate": false
+    },
+    {
+      "name": "Residual Rubber",
+      "machine": "Refinery",
+      "ingredients": [{"item": "Polymer Resin", "amount": 40}, {"item": "Water", "amount": 40}],
+      "products": [{"item": "Rubber", "amount": 20}],
+      "is_alternate": false
+    },
+    {
+      "name": "Petroleum Coke",
+      "machine": "Refinery",
+      "ingredients": [{"item": "Heavy Oil Residue", "amount": 40}],
+      "products": [{"item": "Petroleum Coke", "amount": 120}],
+      "is_alternate": false
+    },
+    {
+      "name": "Residual Fuel",
+      "machine": "Refinery",
+      "ingredients": [{"item": "Heavy Oil Residue", "amount": 60}],
+      "products": [{"item": "Fuel", "amount": 40}],
+      "is_alternate": false
+    },
+    {
+      "name": "Alternate: Heavy Oil Residue",
+      "machine": "Refinery",
+      "ingredients": [{"item": "Crude Oil", "amount": 30}],
+      "products": [{"item": "Heavy Oil Residue", "amount": 40}, {"item": "Polymer Resin", "amount": 20}],
+      "is_alternate": true
+    },
+    {
+      "name": "Alternate: Diluted Fuel",
+      "machine": "Blender",
+      "ingredients": [{"item": "Heavy Oil Residue", "amount": 50}, {"item": "Water", "amount": 100}],
+      "products": [{"item": "Fuel", "amount": 100}],
+      "is_alternate": true
+    },
+    {
+      "name": "Awesome Sink",
+      "machine": "Awesome Sink",
+      "ingredients": [{"item": "Any", "amount": 0}],
+      "products": [],
+      "is_alternate": false
+    }
+  ]
+}
