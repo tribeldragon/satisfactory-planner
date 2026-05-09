@@ -7,7 +7,7 @@ class UI:
         self.node_editor_id = None
         self.target_item = "Plastic"
         self.target_amount = 60.0
-        self.visual_link_to_data = {} # dpg_link_id -> engine_link_tuple
+        self.visual_link_to_data = {}
 
     def build(self):
         dpg.create_context()
@@ -23,9 +23,10 @@ class UI:
             dpg.add_separator()
 
             dpg.add_text("Alternate Recipes")
-            for recipe in self.data_manager.recipes:
-                if recipe["is_alternate"]:
-                    dpg.add_checkbox(label=recipe["name"], callback=self.on_toggle_alternate, user_data=recipe["name"])
+            with dpg.child_window(height=150):
+                for recipe in self.data_manager.recipes:
+                    if recipe["is_alternate"]:
+                        dpg.add_checkbox(label=recipe["name"], callback=self.on_toggle_alternate, user_data=recipe["name"])
 
             dpg.add_separator()
             dpg.add_text("Manual Add")
@@ -35,6 +36,7 @@ class UI:
             dpg.add_button(label="Add Node", callback=self.on_add_manual)
 
         with dpg.window(label="Node Editor", width=980, height=720, pos=(300,0), no_close=True, no_move=True):
+            dpg.add_text("Tip: Hold Middle Mouse Button to Pan Canvas", color=[150, 150, 150])
             self.node_editor_id = dpg.add_node_editor(callback=self.link_callback, delink_callback=self.delink_callback)
 
         dpg.show_viewport()
@@ -56,10 +58,9 @@ class UI:
         machines = dpg.get_value("manual_amount_input")
         recipe = self.data_manager.get_recipe_by_name(recipe_name)
         if recipe:
-            # We assume manual amount input means scale relative to 1 machine
             amount = recipe["products"][0]["amount"] * machines if recipe["products"] else 0
             if recipe["name"] == "Awesome Sink":
-                amount = machines # Treat machine count as amount to sink for manual
+                amount = machines
             self.engine.add_manual_node(recipe_name, amount)
             self.refresh_nodes()
 
@@ -67,25 +68,19 @@ class UI:
         dpg.delete_item(self.node_editor_id, children_only=True)
         self.visual_link_to_data.clear()
 
-        # Track attribute IDs for auto-linking
-        self.output_attrs = {} # (node_id, item_name) -> attr_id
-        self.input_attrs = {}  # (node_id, item_name) -> attr_id
-
-        self.attr_to_data = {} # attr_id -> (node_id, item_name)
+        self.output_attrs = {}
+        self.input_attrs = {}
+        self.attr_to_data = {}
 
         x, y = 50, 50
 
         for node in self.engine.nodes:
             with dpg.node(parent=self.node_editor_id, label=f"{node.recipe['name']} (x{node.machine_count:.1f}) [{node.recipe['machine']}]", pos=(x, y)) as n:
-
-                # Inputs
                 for ing, amt in node.inputs.items():
                     with dpg.node_attribute(attribute_type=dpg.mvNode_Attr_Input) as attr:
                         dpg.add_text(f"{ing}: {amt:.1f}/m")
                         self.input_attrs[(node.id, ing)] = attr
                         self.attr_to_data[attr] = (node.id, ing)
-
-                # Outputs
                 for prod, amt in node.outputs.items():
                     with dpg.node_attribute(attribute_type=dpg.mvNode_Attr_Output) as attr:
                         dpg.add_text(f"{prod}: {amt:.1f}/m")
@@ -97,15 +92,12 @@ class UI:
                 x = 50
                 y += 200
 
-        # Create auto-generated and manual links visually
         for link_tuple in self.engine.links:
             source_node_id, source_item, target_node_id, target_item, amount = link_tuple
             source_attr = self.output_attrs.get((source_node_id, source_item))
             target_attr = self.input_attrs.get((target_node_id, target_item))
 
-            # For Any pin on sink
             if not target_attr and target_item == "Any" and target_node_id:
-                # Try to find the generic "Any" input on the target
                 target_attr = self.input_attrs.get((target_node_id, "Any"))
 
             if source_attr and target_attr:
@@ -113,31 +105,23 @@ class UI:
                 self.visual_link_to_data[link_id] = link_tuple
 
     def link_callback(self, sender, app_data):
-        # app_data -> (source_attr, target_attr)
         link_id = dpg.add_node_link(app_data[0], app_data[1], parent=sender)
-
         source_data = self.attr_to_data.get(app_data[0])
         target_data = self.attr_to_data.get(app_data[1])
-
         if source_data and target_data:
             source_node_id, source_item = source_data
             target_node_id, target_item = target_data
-
-            # Add to engine state so it persists across manual node additions
             link_tuple = (source_node_id, source_item, target_node_id, target_item, 0)
             if link_tuple not in self.engine.links:
                 self.engine.links.append(link_tuple)
-
             self.visual_link_to_data[link_id] = link_tuple
 
     def delink_callback(self, sender, app_data):
-        # app_data -> link_id
         if app_data in self.visual_link_to_data:
             link_tuple = self.visual_link_to_data[app_data]
             if link_tuple in self.engine.links:
                 self.engine.links.remove(link_tuple)
             del self.visual_link_to_data[app_data]
-
         dpg.delete_item(app_data)
 
     def run(self):
